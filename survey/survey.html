@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+  <h1 id="title" class="text-center">Survey Form</h1>
+  <p id="description" class="description">Please fill out the survery form</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+<label id="name-label">Name</label>
+<input id="name" type="text"  placeholder="Enter Your Name" required>
+</div>
+<div class="form-group">
+<label id="email-label">Email </label>
+<input id="email" type="email" placeholder="Enter Your Email" required>
+</div>
+<div class="form-group">
+<label id="number-label">Age</label>
+<input id="number" type="number" min="10" max="99" placeholder="Age" required>
+</div>
+<div class="form-group">
+  <p>Which best describes your current situation?</p>
+  <select id="dropdown">
+  <option>select current role</option>
+  <option>Student</option>
+  <option>Full time</option>
+  <option>Unemployed</option>
+  <option>Prefer not to say</option>
+  </select>
+  </div>
+  <div class="form-group">
+    <p>Would you recommend a friend to learn coding?</p>
+    <label>
+  <input name="user-input" value="Maybe" type="radio" checked>
+  Maybe</label>
+  <label>
+  <input name="user-input" value="Yes" type="radio">
+  Yes</label>
+  <label>
+  <input name="user-input" value="No" type="radio">No
+  </label>
+  </div>
+  <div class="form-group">
+    <p>What would you like to see improved?</p>
+    <label>
+    <input type="checkbox" value="front-end-project" class="input-checkbox">Front-End Project
+    </label>
+    <label>
+    <input type="checkbox" value="back-end-project" class="input-checkbox">Back-End Project
+    </label>
+    <label>
+    <input type="checkbox" value="data-visualization" class="input-checkbox">Data Visualization
+    </label>
+    <label>
+    <input type="checkbox" value="challenges" class="input-checkbox">Challenges
+    </label>
+    <label>
+    <input type="checkbox" value="open-source-community" class="input-checkbox">Open-Source Community
+    </label>
+    <label>
+    <input type="checkbox" value="gitter-help-room" class="input-checkbox">Gitter help rooms
+    </label>
+    <label>
+    <input type="checkbox" value="videos" class="input-checkbox">Videos
+    </label>
+    <label>
+    <input type="checkbox" value="city-meetups" class="input-checkbox">City Meetups
+    </label>
+    <label>
+    <input type="checkbox" value="wiki" class="input-checkbox">Wiki
+    </label>
+    <label>
+    <input type="checkbox" value="forum" class="input-checkbox">Forum
+    </label>
+    <label>
+    <input type="checkbox" value="additional courses" class="input-checkbox">Additional Courses
+    </label>
+    <div class="form-group">
+      <p>Any Suggestions Or Comments?</p>
+      <textarea id="comments" class="textarea-comments" placeholder="Add Your comments here..."></textarea>
+      </div>
+      <div class="form-group">
+       <button type="submit" id="submit" class="submit-button" placeholder="Submit">Submit</button>
+      </div>
+  </form>
+    </div>
+  </body>
+</html>
